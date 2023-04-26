@@ -1,58 +1,52 @@
+>
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <v-card>
+    <v-layout>
+      <v-navigation-drawer
+        image="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+        theme="light"
+        location="right"
+      >
+        <div dir="rtl" class="‍flex flex-col gap-4">
+          <div
+            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-xl transition-all duration-150 ease-in-out text-gray-200 "
+          >
+            <span class="font-bold">خانه </span>
+          </div>
+          <div
+            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-xl transition-all duration-150 ease-in-out text-gray-200 "
+          >
+            <span class="font-bold">درباره من </span>
+          </div>
+          <div
+            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-`xl transition-all duration-150 ease-in-out text-gray-200 "
+          >
+            <span class="font-bold">ارتباط با من </span>
+          </div>
+        </div>
+
+        <template v-slot:append>
+          <div class="m-3 flex justify-center items-center">
+            <button
+              class="bg-gray-200 py-2 px-4 rounded-md hover:bg-gray-500 hover:text-white hover:scale-95 active:scale-105 transition-all duration-150 ease-in-out"
+            >
+              login
+            </button>
+          </div>
+        </template>
+      </v-navigation-drawer>
+      <v-main
+        dir="rtl"
+        class="bg-gray-200 h-screen p-2 flex justify-center items-center"
+      >
+        <h1 class="font-black text-2xl animate-pulse">TASK #1</h1>
+      </v-main>
+    </v-layout>
+  </v-card>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+export default {};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+<style lang="scss" scoped></style>
