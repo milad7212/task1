@@ -19,5 +19,5 @@ const app= createApp(App);
 app.use(vuetify,{
   rtl:true
 })
-app.use(rouer)
+app.use(router)
 app.mount("#app");

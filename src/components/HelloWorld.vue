@@ -8,21 +8,28 @@
         location="right"
       >
         <div dir="rtl" class="‍flex flex-col gap-4">
+          <router-link to="/">
           <div
-            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-xl transition-all duration-150 ease-in-out text-gray-200 "
+            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-xl transition-all duration-150 ease-in-out text-gray-200"
           >
             <span class="font-bold">خانه </span>
           </div>
-          <div
-            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-xl transition-all duration-150 ease-in-out text-gray-200 "
-          >
+        </router-link>
+          <router-link to="about-me">
+            
+            <div
+            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-xl transition-all duration-150 ease-in-out text-gray-200"
+            >
             <span class="font-bold">درباره من </span>
           </div>
-          <div
-            class="p-2 border-b m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-`xl transition-all duration-150 ease-in-out text-gray-200 "
-          >
-            <span class="font-bold">ارتباط با من </span>
-          </div>
+        </router-link>
+          <router-link to="/table">
+            <div
+              class="p-2 border-b w-full m-2 my-4 rounded-md cursor-pointer hover:bg-gray-200/50 hover:text-gray-600 hover:text-`xl transition-all duration-150 ease-in-out text-gray-200"
+            >
+              <span class="font-bold w-full"> جدول </span>
+            </div>
+          </router-link>
         </div>
 
         <template v-slot:append>
@@ -39,7 +46,7 @@
         dir="rtl"
         class="bg-gray-200 h-screen p-2 flex justify-center items-center"
       >
-        <h1 class="font-black text-2xl animate-pulse">TASK #1</h1>
+        <router-view></router-view>
       </v-main>
     </v-layout>
   </v-card>
